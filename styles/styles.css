@@ -1,0 +1,16 @@
+.button:hover {
+  background-color: #0062a0;
+}
+
+.container-lg {
+  background-color: white;
+}
+
+body {
+  background-color: black;
+  background-image: url(https://i.pinimg.com/564x/6e/ee/a5/6eeea5dc47c026c591245125e2b72b01.jpg);
+}
+
+.hero_text {
+  text-align: center;
+}
