@@ -27,11 +27,13 @@
   <body>
     <header>
       
+      <!-- Logo navbar -->
       <nav class="navbar navbar-expand-lg p-4 navbar-dark text-bg-dark">       
          <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="images/logoipsum-245.svg" alt="logo">
           </a>
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,11 +52,49 @@
     <main>
       
 
-     <div class="container-lg">
+    
+     <div class="grid-container row d-flex">
 
-      <div class="hero">
-        <h1 class="hero_text p-5">Productos destacados</h1>
-      </div>
+      <h1 class="pr col-md-12">Productos destacados</h1>
+    
+        <aside class="col-md2 d-flex flex-column">
+        <hr>
+        <div class="categorias">
+          <h2 class="mb-4">Categorias</h2>
+          <form onsubmit="return false" class="checkbox">
+         <div class="d-flex align-items-center p-1">
+          <input name="identificador" type="radio" value="procesadores" id="procesadores">
+          <label class="m-2" for="procesadores">Procesadores</label>
+         </div>
+          <form onsubmit="return false" class="checkbox">
+         <div class="d-flex  align-items-center  p-1">
+          <input name="identificador" type="radio" value="GPU" id="GPU">
+          <label class="m-2" for="GPU">Tarjeta gráfica</label>
+         </div>
+          <form onsubmit="return false" class="checkbox">
+         <div class="d-flex  align-items-center  p-1">
+          <input name="identificador" type="radio" value="motherboard" id="motherboard">
+          <label class="m-2" for="motherboard">Mother Board</label>
+         </div>
+          <form onsubmit="return false" class="checkbox">
+         <div class="d-flex j align-items-center  p-1">
+          <input name="identificador" type="radio" value="monitores" id="monitores">
+          <label class="m-2" for="monitores">Monitores</label>
+         </div>
+         <input class="btn btn-primary" type="submit" value="Aplicar">
+        </form>
+        </div>
+      <hr>
+      <h2>Precio</h2>
+      <form onsubmit="return false" class="filtroPrecio d-flex flex-column">
+        <label class="mb-2" for="rangeSlider_inversed">Minimo</label>
+        <input type="range" min="4000" max="20000" id="sliderReverse" value="5000">
+        <label class="mb-2 mt-2" for="rangeSlider">Maximo</label>
+        <input type="range" min="4000" max="20000" id="rangeSlider" value="8000">
+         <input class="btn btn-primary mt-4 mb-5" type="submit" value="Aplicar">
+      </form>
+    </aside>
+      
 
       <div class="row d-flex justify-content-center flex-wrap">
         
@@ -62,16 +102,18 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> Procesador AMD Ryzen 5 3600 </h2>
           <img class="card_img p-4" src="images/Ryzen5.jpg" alt="Ryzen5">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> Procesador AMD Ryzen 7 5800X </h2>
           <img class="card_img p-4" src="images/Ryzen7.jpg" alt="Ryzen7">
-          <div class="card-body"> 
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a class="btn btn-primary button">Comprar</a>
+             <p class="money">$5400</p>
           </div>
         </div>
 
@@ -79,8 +121,9 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> Procesador Intel Core i5-10400F </h2>
           <img class="card_img" src="images/i5.webp" alt="i5">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
@@ -89,8 +132,9 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> Procesador Intel Core i7-12700F</h2>
           <img class="card_img p-5" src="images/i7.jpg" alt="i7">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
@@ -98,9 +142,9 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> NVIDIA GeForce RTX 3080</h2>
           <img class="card_img p-3" src="images/3080.webp" alt="3080">
-          <div class="card-body">
-         
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
@@ -108,20 +152,22 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> NVIDIA GeForce GTX 1660 SUPER </h2>
           <img class="card_img p-3" src="images/1660.webp" alt="1660">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
 
-        <div class="row d-flex justify-content-center flex-wrap"></div>
+        <div class="row d-flex justify-content-center flex-wrap">
 
         
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title">  NVIDIA GeForce RTX 2060 SUPER </h2>    
           <img class="card_img" src="images/2060.webp" alt="2060">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>
 
@@ -129,26 +175,30 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> MSI ATX MAG B550 TOMAHAWK</h2>
           <img class="card_img p-4" src="images/MSI.webp" alt="B550">
-          <div class="card-body">
-            <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+            <p class="money">$5400</p>
           </div>
         </div>  
 
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title"> ASUS Micro ATX PRIME B550M-A AC </h2>
           <img class="card_img p-3" src="images/ASUS.webp" alt="B550M-A">
-                <div class="card-body">
-                  <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary button">Comprar</a>
+                  <p class="money">$5400</p>
                 </div>
               </div>
+              
       
               <div class="row d-flex justify-content-center flex-wrap"></div>
       
               <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
                 <h2 class="card_title">AORUS Micro ATX B550M </h2>
                 <img class="card_img p-3" src="images/AORUS.webp" alt="B550M">
-                <div class="card-body">
-                  <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary button">Comprar</a>
+                  <p class="money">$5400</p>
                 </div>
               </div>
         
@@ -156,8 +206,9 @@
         <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
           <h2 class="card_title">Lenovo C22-20 LED 21.5</h2>       
           <img class="card_img" src="images/Lenovo.webp" alt="Lenovo">
-                <div class="card-body">
-                  <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+          <div class="card-body d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary button">Comprar</a>
+                  <p class="money">$5400</p>
                 </div>
               </div>
       
@@ -165,8 +216,9 @@
               <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
                 <h2 class="card_title">BenQ GW2280 LED 21.5</h2>
                 <img class="card_img" src="images/BENQ.webp" alt="BenQ">
-                <div class="card-body">
-                  <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary button">Comprar</a>
+                  <p class="money">$5400</p>
                 </div>
               </div>
            
@@ -177,8 +229,9 @@
             <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
               <h2 class="card_title"> AOC 22B2HM </h2>
               <img class="card_img" src="images/AOC.webp" alt="AOC">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary button">Comprar</a>
+                      <p class="money">$5400</p>
                     </div>
                   </div>
           
@@ -186,8 +239,9 @@
                   <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
                     <h2 class="card_title"> Astros A40 </h2>
                     <img class="card_img" src="images/A40.webp" alt="A40">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary button">Comprar</a>
+                      <p class="money">$5400</p>
                     </div>
                   </div>
            
@@ -195,14 +249,14 @@
             <div class="card p-4 m-4 col-12 col-md-6" style="width: 20rem ; object-fit: cover;">
               <h2 class="card_title"> Astros A420</h2>
               <img class="card_img" src="images/A20.webp" alt="A20">
-                    <div class="card-body">
-                      <a href="#" class="btn btn-outline-dark button">Comprar</a></a>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary button">Comprar</a>
+                      <p class="money">$5400</p>
                     </div>
                   </div>
                 </div>
-          
-  
-      </div>
+      
+     
     </main>
 
     <!-- Scripts JS -->
