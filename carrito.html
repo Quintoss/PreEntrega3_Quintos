@@ -31,82 +31,42 @@
     </header>
       <nav>
 <ul class="filt">
-<li><button class="categoria active"><i class="bi bi-back"></i>Regresar</button></li>
+<li> <a class="boton-menu boton-volver categoria" href="./index.html">
+    <i class="bi bi-back"></i> Volver
+</a></li>
 <li><a class="categoria active boton-carro" href="carrito.html"><i class="bi bi-cart-dash-fill"></i>Carrito<span class="numerito"> 0</span></a></li>
 </ul>
 </nav>
 
-<footer>CyberVs 2023</footer>
+
+
+
+<footer>©CyberVs 2023</footer>
         </aside>
 
     <main>
 <h2 class="carro">Carrito</h2>
 <div class="grid-container">
-    <p class="empty">Tu carrito esta vacio<i class="bi bi-bag-x-fill m-2"></i></p>
+    <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio<i class="bi bi-bag-x-fill m-2"></i></p>
 
 
-    <div class="lista">
+    <div id="carrito-productos" class="carrito-productos disabled">
     <div class="producto-carro">
-        <img class="images" src="images/A40.webp" alt="">
-        <div class="producto-carro-nombre">
-        <small>Titulo</small>
-        <h3>A40</h3>
-    </div>
-    <div class="producto-carro-cantidad">
-        <small>Cantidad</small>
-        <p>1</p>
-    </div>
-    <div class="producto-carro-precio">
-        <small>Precio</small>
-        <p>$4500</p>
-    </div>
-    <div class="producto-carro-total">
-        <small>Subtotal</small>
-        <p>$4500</p>
-    </div>
-    <button class="producto-carro-eliminar"><i class="bi bi-trash"></i></button>
+       
 </div>
-
-    <div class="producto-carro">
-        <img class="images" src="images/A40.webp" alt="">
-        <div class="producto-carro-nombre">
-        <small>Titulo</small>
-        <h3>A40</h3>
-    </div>
-    <div class="producto-carro-cantidad">
-        <small>Cantidad</small>
-        <p>1</p>
-    </div>
-    <div class="producto-carro-precio">
-        <small>Precio</small>
-        <p>$4500</p>
-    </div>
-    <div class="producto-carro-total">
-        <small>Subtotal</small>
-        <p>$4500</p>
-    </div>
-    <button class="producto-carro-eliminar"><i class="bi bi-trash"></i></button>
-</div>
- </div>
-
- <div class="contenedor-acciones">
-<div class="carro-acciones-left">
-    <button class="producto-carro-vaciar">Vaciar carrito</button>
-</div>
-<div class="producto-acciones-right">
-    <div class="producto-acciones-total">
-        <p>Total:</p>
-        <p id="total">$4500</p>
-    </div>
-    <button class="producto-acciones-confirmar">Confirmar</button>
-</div>
-</div>
-</div>
+<p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+</div> 
 </div>
 
 
     </main>    
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
