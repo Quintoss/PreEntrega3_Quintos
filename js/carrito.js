@@ -46,13 +46,5 @@ function cargarProductosCarrito() {
 
       contenedorCarritoProductos.append(div);
     });
-
-    actualizarBotonesEliminar();
-    actualizarTotal();
-  } else {
-    contenedorCarritoVacio.classList.remove("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.add("disabled");
   }
 }
